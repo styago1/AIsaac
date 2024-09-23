@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola, soy AIsaac</title>
+</head>
+<body>
+    <h1>Bienvenido a AIsaac,. Te ayudaré a buscar la información que necesites. ¿Cómo te puedo ayuda?</h1>
+    <p>Usa el siguiente campo para buscar:</p>
+
+    <!-- Campo de entrada que activa el widget de búsqueda -->
+    <input placeholder="Buscar aquí" id="searchWidgetTrigger" />
+
+    <!-- Incluir el Widget JavaScript de Google -->
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=es_419"></script>
+
+    <!-- Widget de búsqueda incrustado -->
+    <gen-search-widget
+      configId="8ec84544-1cf0-4b4e-bc8b-d3fdef3f75b5"
+      location="eu"
+      triggerId="searchWidgetTrigger">
+    </gen-search-widget>
+</body>
+</html>
